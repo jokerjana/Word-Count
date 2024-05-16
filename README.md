@@ -24,12 +24,12 @@ End the program
 #Developed by: JANARTHANAN B
 #Register Number: 212223100014
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+num=0
+with open("story.txt","r") as f1:
+    for i in f1:
+        word=i.split()
+        num += len(word)
+print("The number of words are in the file is ",num)
 ```
 ### OUTPUT:
 ![image](https://github.com/jokerjana/Word-Count/assets/147173630/25959359-d6ac-4fde-9d8b-2870e6f41ac7)
